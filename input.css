@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Fraunces';
+        src:url('/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
+        font-weight: 600;
+    }
+    @font-face {
+        font-family: 'Manrope';
+        src:url('/assets/fonts/manrope/static/Manrope-Regular.ttf');
+        font-weight: 400;
+    }
+}
