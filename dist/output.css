@@ -43,7 +43,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Manrope, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -422,7 +422,7 @@ video {
 @font-face {
   font-family: 'Fraunces';
 
-  src:url('/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
+  src: url('/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
 
   font-weight: 600;
 }
@@ -430,9 +430,50 @@ video {
 @font-face {
   font-family: 'Manrope';
 
-  src:url('/assets/fonts/manrope/static/Manrope-Regular.ttf');
+  src: url('/assets/fonts/manrope/static/Manrope-Regular.ttf');
 
   font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Manrope, sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+  font-family: Fraunces, serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 8rem;
+  line-height: 8rem;
+}
+
+h4 {
+  font-size: 5.6rem;
+  line-height: 6.4rem;
+}
+
+h6 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+p {
+  font-family: Manrope, sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
 }
 
 *, ::before, ::after {
@@ -529,6 +570,47 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.btn {
+  font-weight: 700;
+}
+
+.btn-primary {
+  border-width: 4px;
+  --tw-border-opacity: 1;
+  border-color: rgb(68 255 161 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 255 161 / var(--tw-bg-opacity));
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(36 5 62 / var(--tw-text-opacity));
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(68 255 161 / var(--tw-text-opacity));
+}
+
+.btn-secondary {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: #44FFA1;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 8px;
+}
+
+.btn-secondary:hover {
+  --tw-text-opacity: 1;
+  color: rgb(68 255 161 / var(--tw-text-opacity));
+}
+
 .hidden {
   display: none;
+}
+
+.font-sans {
+  font-family: Manrope, sans-serif;
 }

@@ -5,12 +5,67 @@
 @layer base {
     @font-face {
         font-family: 'Fraunces';
-        src:url('/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
+        src: url('/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
         font-weight: 600;
     }
     @font-face {
         font-family: 'Manrope';
-        src:url('/assets/fonts/manrope/static/Manrope-Regular.ttf');
+        src: url('/assets/fonts/manrope/static/Manrope-Regular.ttf');
         font-weight: 400;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+    body {
+        @apply font-sans;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-serif font-semibold;
+    }
+    h2 {
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+    h4 {
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+    }
+    h6 {
+        font-size: 3.2rem;
+        line-height: 4rem;
+    }
+    p {
+        @apply font-sans;
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply font-bold;
+    }
+
+    .btn-primary {
+        @apply px-8 py-6 bg-secondary text-primary border-4 border-secondary;
+    }
+    .btn-primary:hover {
+        @apply bg-transparent text-secondary;
+    }
+
+    .btn-secondary {
+        @apply underline underline-offset-8 decoration-4 decoration-secondary text-inherit;
+    }
+    .btn-secondary:hover {
+        @apply text-secondary;
     }
 }
