@@ -14,13 +14,8 @@
         font-weight: 400;
     }
 
-    html {
-        font-size: 62.5%;
-    }
     body {
         @apply font-sans;
-        font-size: 1.8rem;
-        line-height: 3.2rem;
     }
 
     h1,
@@ -32,31 +27,31 @@
         @apply font-serif font-semibold;
     }
     h2 {
-        font-size: 8rem;
-        line-height: 8rem;
+        font-size: 5rem;
+        line-height: 5rem;
     }
     h4 {
-        font-size: 5.6rem;
-        line-height: 6.4rem;
+        font-size: 3.5rem;
+        line-height: 4rem;
     }
     h6 {
-        font-size: 3.2rem;
-        line-height: 4rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
     p {
         @apply font-sans;
-        font-size: 1.8rem;
-        line-height: 3.2rem;
+        font-size: 1.125rem;
+        line-height: 2rem;
     }
 }
 
 @layer components {
     .btn {
-        @apply font-bold;
+        @apply font-bold w-max;
     }
 
     .btn-primary {
-        @apply px-8 py-6 bg-secondary text-primary border-2 border-secondary;
+        @apply px-6 py-4 bg-secondary text-primary border-2 border-secondary;
     }
     .btn-primary:hover {
         @apply bg-transparent text-secondary;
