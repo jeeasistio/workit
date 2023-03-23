@@ -27,16 +27,40 @@
         @apply font-serif font-semibold;
     }
     h2 {
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 3.125rem;
+        line-height: 3.625rem;
     }
     h4 {
-        font-size: 3.5rem;
-        line-height: 4rem;
-    }
-    h6 {
         font-size: 2rem;
         line-height: 2.5rem;
+    }
+    h6 {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+    @screen sm {
+        h2 {
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+        h4 {
+            font-size: 3rem;
+            line-height: 3.5rem;
+        }
+    }
+    @screen md {
+        h2 {
+            font-size: 5rem;
+            line-height: 5rem;
+        }
+        h4 {
+            font-size: 3.5rem;
+            line-height: 4rem;
+        }
+        h6 {
+            font-size: 2rem;
+            line-height: 2.5rem;
+        }
     }
     p {
         @apply font-sans;

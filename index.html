@@ -11,24 +11,31 @@
     </head>
 
     <body>
-        <div class="bg-primary">
-            <div class="flex flex-row justify-between">
-                <img src="./assets/images/logo-light.svg" alt="workit" />
-                <button class="btn btn-secondary text-white">Apply for access</button>
+        <div class="relative pt-8 overflow-hidden">
+            <div class="bg-primary h-full w-[200%] absolute -top-60 -z-10"></div>
+            <div class="hidden absolute">
+                <img src="/assets/images/bg-pattern-1.svg" alt="spring" />
+            </div>
+            <div class="hidden absolute">
+                <img src="/assets/images/bg-pattern-2.svg" alt="spring" />
             </div>
 
-            <h2 class="text-white">
-                Data <span class="underline decoration-secondary decoration-4">tailored</span> to your needs.
-            </h2>
+            <div class="md:container md:mx-auto px-4 flex flex-col space-y-12">
+                <div class="flex flex-row justify-between">
+                    <img src="./assets/images/logo-light.svg" alt="workit" />
+                    <button class="btn btn-secondary text-white">Apply for access</button>
+                </div>
 
-            <button class="btn btn-primary">Learn more</button>
+                <h2 class="text-white text-center">
+                    Data <span class="underline decoration-secondary decoration-4">tailored</span> to your needs.
+                </h2>
 
-            <div class="w-[320px] md:w-[514px] xl:w-[767px] h-11">
-                <img srcset="/assets/images/image-hero.webp" alt="phone" class="w-17" />
+                <button class="btn btn-primary mx-auto">Learn more</button>
+
+                <div class="w-[320px] md:w-[514px] xl:w-[767px] mx-auto">
+                    <img srcset="/assets/images/image-hero.webp" alt="phone" />
+                </div>
             </div>
-
-            <img src="/assets/images/bg-pattern-1.svg" alt="spring" />
-            <img src="/assets/images/bg-pattern-2.svg" alt="spring" />
         </div>
 
         <div>
