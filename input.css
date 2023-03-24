@@ -48,7 +48,7 @@
             line-height: 3.5rem;
         }
     }
-    @screen md {
+    @screen lg {
         h2 {
             font-size: 5rem;
             line-height: 5rem;

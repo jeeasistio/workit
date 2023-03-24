@@ -12,7 +12,9 @@
 
     <body>
         <div class="relative pt-8 overflow-hidden">
-            <div class="bg-primary h-full w-[200%] absolute -top-60 -z-10"></div>
+            <div
+                class="bg-primary h-[30rem] sm:h-[31rem] lg:h-[43rem] w-[200%] absolute top-0 rounded-b-[50%] translate-x-[-25%] -z-10"
+            ></div>
             <div class="hidden absolute">
                 <img src="/assets/images/bg-pattern-1.svg" alt="spring" />
             </div>
@@ -20,59 +22,65 @@
                 <img src="/assets/images/bg-pattern-2.svg" alt="spring" />
             </div>
 
-            <div class="md:container md:mx-auto px-4 flex flex-col space-y-12">
+            <div class="lg:container lg:mx-auto px-2 flex flex-col space-y-12">
                 <div class="flex flex-row justify-between">
                     <img src="./assets/images/logo-light.svg" alt="workit" />
                     <button class="btn btn-secondary text-white">Apply for access</button>
                 </div>
 
                 <h2 class="text-white text-center">
-                    Data <span class="underline decoration-secondary decoration-4">tailored</span> to your needs.
+                    Data <span class="underline decoration-secondary decoration-4">tailored</span> to <br />your needs.
                 </h2>
 
                 <button class="btn btn-primary mx-auto">Learn more</button>
 
-                <div class="w-[320px] md:w-[514px] xl:w-[767px] mx-auto">
+                <div class="w-[320px] lg:w-[514px] xl:w-[767px] mx-auto">
                     <img srcset="/assets/images/image-hero.webp" alt="phone" />
                 </div>
             </div>
         </div>
 
-        <div>
-            <div>
+        <div class="flex flex-col lg:flex-row justify-center items-center text-center sm:max-lg:text-left gap-10 px-2">
+            <div class="flex flex-col sm:max-lg:flex-row items-center gap-6">
                 <div class="flex items-center justify-center border-primary border w-[3.5rem] h-[3.5rem] rounded-full">
                     <p class="font-serif text-2xl font-semibold text-primary">1</p>
                 </div>
-                <h6 class="text-primary">Actionable Insights</h6>
-                <p class="text-tertiary">
-                    Optimize your products, improve customer satisfaction and stay ahead of the competition with our
-                    product data analytics.
-                </p>
+                <div class="sm:max-w-xl lg:max-w-sm">
+                    <h6 class="text-primary mb-4">Actionable Insights</h6>
+                    <p class="text-tertiary">
+                        Optimize your products, improve customer satisfaction and stay ahead of the competition with our
+                        product data analytics.
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="flex flex-col sm:max-lg:flex-row items-center gap-6">
                 <div class="flex items-center justify-center border-primary border w-[3.5rem] h-[3.5rem] rounded-full">
                     <p class="font-serif text-2xl font-semibold text-primary">2</p>
                 </div>
-                <h6 class="text-primary">Data-driven decisions</h6>
-                <p class="text-tertiary">
-                    Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock
-                    insights hidden in your product data.
-                </p>
+                <div class="sm:max-w-xl lg:max-w-sm">
+                    <h6 class="text-primary mb-4">Data-driven decisions</h6>
+                    <p class="text-tertiary">
+                        Make data-driven decisions with our product data analytics. Our AI-generated reports help you
+                        unlock insights hidden in your product data.
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="flex flex-col sm:max-lg:flex-row items-center gap-6">
                 <div class="flex items-center justify-center border-primary border w-[3.5rem] h-[3.5rem] rounded-full">
                     <p class="font-serif text-2xl font-semibold text-primary">3</p>
                 </div>
-                <h6 class="text-primary">Always affordable</h6>
-                <p class="text-tertiary">
-                    Always affordable pricing that scales with your business. Get top-quality product data analytics
-                    services without hidden costs or unexpected fees.
-                </p>
+                <div class="sm:max-w-xl lg:max-w-sm">
+                    <h6 class="text-primary mb-4">Always affordable</h6>
+                    <p class="text-tertiary">
+                        Always affordable pricing that scales with your business. Get top-quality product data analytics
+                        services without hidden costs or unexpected fees.
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div>
-            <div class="w-[281px] md:w-[477px]">
+        <!-- <div>
+            <div class="w-[281px] lg:w-[477px]">
                 <img src="./assets/images/image-founder.webp" alt="person" />
             </div>
 
@@ -94,6 +102,6 @@
                 <img src="./assets/images/icon-twitter.svg" alt="icon-twitter" />
                 <img src="./assets/images/icon-instagram.svg" alt="icon-instagram" />
             </div>
-        </div>
+        </div> -->
     </body>
 </html>
