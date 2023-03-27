@@ -4,110 +4,156 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/favicon-32x32.png"
+        />
         <link href="/dist/output.css" rel="stylesheet" />
 
         <title>Frontend Mentor | Workit landing page</title>
     </head>
 
     <body>
-        <div class="relative pt-8 overflow-hidden">
+        <div class="relative mb-32 overflow-hidden pt-8">
             <div
-                class="bg-primary h-[30rem] sm:h-[31rem] lg:h-[43rem] w-[200%] absolute top-0 rounded-b-[50%] -translate-x-1/4 -z-10"
+                class="absolute top-0 -z-10 h-[30rem] w-[200%] -translate-x-1/4 rounded-b-[50%] bg-primary sm:h-[31rem] lg:h-[43rem]"
             ></div>
-            <div class="hidden sm:block absolute top-10 lg:top-28 -left-56 lg:-left-36">
-                <img src="/assets/images/bg-pattern-1.svg" alt="spring" />
-            </div>
-            <div class="hidden sm:block absolute top-52 lg:top-80 -right-24 lg:-right-12">
-                <img src="/assets/images/bg-pattern-2.svg" alt="spring" />
-            </div>
+            <img
+                src="/assets/images/bg-pattern-1.svg"
+                alt="spring"
+                class="absolute top-10 -left-56 hidden sm:block lg:top-28 lg:-left-36"
+            />
+            <img
+                src="/assets/images/bg-pattern-2.svg"
+                alt="spring"
+                class="absolute top-52 -right-24 hidden sm:block lg:top-80 lg:-right-12"
+            />
 
-            <div class="lg:container lg:mx-auto px-4 flex flex-col space-y-12">
+            <div class="flex flex-col space-y-12 px-4 lg:container lg:mx-auto">
                 <div class="flex flex-row justify-between">
                     <img src="./assets/images/logo-light.svg" alt="workit" />
-                    <button class="btn btn-secondary text-white">Apply for access</button>
+                    <button class="btn btn-secondary text-white">
+                        Apply for access
+                    </button>
                 </div>
 
-                <h2 class="text-white text-center">
-                    Data <span class="underline decoration-secondary decoration-4">tailored</span> to <br />your needs.
+                <h2 class="text-center text-white">
+                    Data
+                    <span class="underline decoration-secondary decoration-4"
+                        >tailored</span
+                    >
+                    to <br />your needs.
                 </h2>
 
                 <button class="btn btn-primary mx-auto">Learn more</button>
 
-                <div class="w-[320px] lg:w-[514px] xl:w-[767px] mx-auto">
-                    <img srcset="/assets/images/image-hero.webp" alt="phone" />
-                </div>
+                <img
+                    srcset="/assets/images/image-hero.webp"
+                    alt="phone"
+                    class="mx-auto w-[320px] lg:w-[514px] xl:w-[767px]"
+                />
             </div>
         </div>
 
-        <div class="flex flex-col lg:flex-row justify-center items-center text-center sm:max-lg:text-left gap-10 px-4">
-            <div class="flex flex-col sm:max-lg:flex-row items-center gap-6">
-                <div class="flex items-center justify-center border-primary border w-[3.5rem] h-[3.5rem] rounded-full">
-                    <p class="font-serif text-2xl font-semibold text-primary">1</p>
+        <div
+            class="mb-32 flex flex-col items-center justify-center gap-10 px-4 text-center sm:max-lg:text-left lg:flex-row"
+        >
+            <div class="flex flex-col items-center gap-6 sm:max-lg:flex-row">
+                <div
+                    class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full border border-primary"
+                >
+                    <p class="font-serif text-2xl font-semibold text-primary">
+                        1
+                    </p>
                 </div>
                 <div class="sm:max-w-xl lg:max-w-sm">
-                    <h6 class="text-primary mb-4">Actionable Insights</h6>
+                    <h6 class="mb-4 text-primary">Actionable Insights</h6>
                     <p class="text-tertiary">
-                        Optimize your products, improve customer satisfaction and stay ahead of the competition with our
-                        product data analytics.
+                        Optimize your products, improve customer satisfaction
+                        and stay ahead of the competition with our product data
+                        analytics.
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col sm:max-lg:flex-row items-center gap-6">
-                <div class="flex items-center justify-center border-primary border w-[3.5rem] h-[3.5rem] rounded-full">
-                    <p class="font-serif text-2xl font-semibold text-primary">2</p>
+            <div class="flex flex-col items-center gap-6 sm:max-lg:flex-row">
+                <div
+                    class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full border border-primary"
+                >
+                    <p class="font-serif text-2xl font-semibold text-primary">
+                        2
+                    </p>
                 </div>
                 <div class="sm:max-w-xl lg:max-w-sm">
-                    <h6 class="text-primary mb-4">Data-driven decisions</h6>
+                    <h6 class="mb-4 text-primary">Data-driven decisions</h6>
                     <p class="text-tertiary">
-                        Make data-driven decisions with our product data analytics. Our AI-generated reports help you
-                        unlock insights hidden in your product data.
+                        Make data-driven decisions with our product data
+                        analytics. Our AI-generated reports help you unlock
+                        insights hidden in your product data.
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col sm:max-lg:flex-row items-center gap-6">
-                <div class="flex items-center justify-center border-primary border w-[3.5rem] h-[3.5rem] rounded-full">
-                    <p class="font-serif text-2xl font-semibold text-primary">3</p>
+            <div class="flex flex-col items-center gap-6 sm:max-lg:flex-row">
+                <div
+                    class="flex h-[3.5rem] w-[3.5rem] items-center justify-center rounded-full border border-primary"
+                >
+                    <p class="font-serif text-2xl font-semibold text-primary">
+                        3
+                    </p>
                 </div>
                 <div class="sm:max-w-xl lg:max-w-sm">
-                    <h6 class="text-primary mb-4">Always affordable</h6>
+                    <h6 class="mb-4 text-primary">Always affordable</h6>
                     <p class="text-tertiary">
-                        Always affordable pricing that scales with your business. Get top-quality product data analytics
+                        Always affordable pricing that scales with your
+                        business. Get top-quality product data analytics
                         services without hidden costs or unexpected fees.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="px-4 mb-12">
-            <div
-                class="w-[281px] lg:w-[477px] mx-auto translate-y-12 sm:translate-y-1/2 lg:translate-y-2/3 sm:-translate-x-52 lg:-translate-x-80"
-            >
-                <img src="./assets/images/image-founder.webp" alt="person" />
-            </div>
+        <div class="mb-12 px-4 lg:h-[620px]">
+            <img
+                src="./assets/images/image-founder.webp"
+                alt="person"
+                class="mx-auto w-[281px] sm:-translate-x-52 lg:w-[477px] lg:-translate-x-80"
+            />
 
             <div
-                class="bg-primary text-center sm:text-left text-white flex flex-col space-y-6 py-12 px-4 sm:px-12 relative z-10 sm:max-w-[34rem] lg:max-w-[46rem] mx-auto sm:translate-x-20 lg:translate-x-48"
+                class="relative z-10 mx-auto flex -translate-y-12 flex-col space-y-6 bg-primary py-12 px-4 text-center text-white sm:max-w-[34rem] sm:-translate-y-32 sm:translate-x-20 sm:px-12 sm:text-left lg:max-w-[46rem] lg:translate-x-48 lg:-translate-y-72"
             >
                 <h4>Be the first to test</h4>
                 <p>
-                    Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a beta tester
-                    for our app and kickstart your company. Apply for access below and I’ll be in touch to schedule a
-                    call.
+                    Hi, I'm Louis Graham, the founder of the company. Book a
+                    demo call with me to become a beta tester for our app and
+                    kickstart your company. Apply for access below and I’ll be
+                    in touch to schedule a call.
                 </p>
                 <button class="btn btn-primary">Apply for access</button>
-                <div class="hidden sm:block absolute -bottom-28 lg:-bottom-16 right-8 lg:right-16">
-                    <img src="/assets/images/bg-pattern-3.svg" alt="spring" />
-                </div>
+                <img
+                    src="/assets/images/bg-pattern-3.svg"
+                    alt="spring"
+                    class="absolute -bottom-28 right-8 hidden sm:block lg:-bottom-16 lg:right-16"
+                />
             </div>
         </div>
 
-        <div class="flex flex-col items-center space-y-12 mb-12">
+        <div class="mb-12 flex flex-col items-center space-y-12">
             <img src="./assets/images/logo-dark.svg" alt="workit" />
             <div class="flex space-x-6">
-                <img src="./assets/images/icon-facebook.svg" alt="icon-facebook" />
-                <img src="./assets/images/icon-twitter.svg" alt="icon-twitter" />
-                <img src="./assets/images/icon-instagram.svg" alt="icon-instagram" />
+                <img
+                    src="./assets/images/icon-facebook.svg"
+                    alt="icon-facebook"
+                />
+                <img
+                    src="./assets/images/icon-twitter.svg"
+                    alt="icon-twitter"
+                />
+                <img
+                    src="./assets/images/icon-instagram.svg"
+                    alt="icon-instagram"
+                />
             </div>
         </div>
     </body>
